@@ -1,0 +1,89 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+  overflow: hidden;
+  background-color: #48853c;
+  padding: 20px;
+}
+
+#header a {
+  float: left;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 4px;
+  line-height: 25px;
+}
+
+#header a.nav-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right input {
+  padding: 12px;
+  border-radius: 3px;
+  border: none;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.header-right button {
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  #header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+    display: inline-block;
+  }
+
+  .header-right input {
+    width: 100%;
+  }
+}
+
+#section {
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flex-container > div {
+  border: 1px solid grey;
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  min-height: 150px;
+  width: 70%;
+  border-radius: 3px;
+}
+
+.loader {
+  display: none;
+}
